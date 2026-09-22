@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[100], n, target, count = 0;
+    cout << "Enter number of elements: ";
+    cin >> n;
+    cout << "Enter elements: ";
+    for(int i=0; i<n; i++) cin >> arr[i];
+    
+    cout << "Enter number to find frequency: ";
+    cin >> target;
+    
+    for(int i=0; i<n; i++) {
+        if(arr[i] == target) {
+            count=count+1; 
+        }
+    }
+    
+    cout << "Frequency of " << target << " is: " << count;
+    return 0;
+}
